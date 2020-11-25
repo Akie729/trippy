@@ -1,0 +1,10 @@
+<div class="contents row">
+  <% @trips.each do |trip| %>
+    <div class="content_post" style="background-image: url(<%= trip.image %>);">
+      <p><%= trip.text %></p>
+      <span class="name">
+        <%= trip.name %>
+      </span>
+    </div>
+  <% end %>
+</div>

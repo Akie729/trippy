@@ -3,7 +3,7 @@ class CreateTrips < ActiveRecord::Migration[6.0]
     create_table :trips do |t|
       t.string :name
       t.string :text
-      t.string :image
+      t.text :image
 
       t.timestamps
     end
